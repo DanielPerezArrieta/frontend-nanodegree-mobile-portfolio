@@ -1,0 +1,26 @@
+{
+  "name": "udacity-web-optimization",
+  "description": "Portfolio optimization for Udacity nanodegree",
+  "homepage": "https://github.com/DanielPerezArrieta/frontend-nanodegree-mobile-portfolio",
+  "author": {
+    "name": "Daniel Pérez",
+    "email": "daniel@bitup.com.es",
+    "url": "http://www.bitup.com.es/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DanielPerezArrieta/frontend-nanodegree-mobile-portfolio.git"
+  },
+  "contributors": [],
+  "version": "0.0.1",
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-pagespeed": "^0.4.1",
+    "load-grunt-tasks": "^3.1.0",
+    "ngrok": "^0.1.99"
+  }
+}

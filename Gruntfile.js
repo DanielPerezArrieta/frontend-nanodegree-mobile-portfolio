@@ -32,13 +32,16 @@ module.exports = function(grunt) {
           strategy: "mobile"
         }
       }
+    },
+    uglify: {
+      
     }
   });
 
   // Register customer task for ngrok
   grunt.registerTask('psi-ngrok', 'Run pagespeed with ngrok', function() {
     var done = this.async();
-    var port = 9292;
+    var port = 8000;
 
     ngrok.connect(port, function(err, url) {
       if (err !== null) {

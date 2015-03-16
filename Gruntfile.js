@@ -33,6 +33,18 @@ module.exports = function(grunt) {
         }
       }
     },
+    imagemin : {
+      production : {
+        files : [
+          {
+            expand: true,
+            cwd: 'images',
+            src: '**/*.{png,jpg,jpeg}',
+            dest: 'img'
+          }
+        ]
+      }
+    },    
     uglify: {
       
     }
@@ -41,7 +53,7 @@ module.exports = function(grunt) {
   // Register customer task for ngrok
   grunt.registerTask('psi-ngrok', 'Run pagespeed with ngrok', function() {
     var done = this.async();
-    var port = 80;
+    var port = 8000;
 
     ngrok.connect(port, function(err, url) {
       if (err !== null) {

@@ -33,6 +33,8 @@ form {
   position: fixed;
   width: 256px;
   z-index: -1;
+  /*The tricky part to avoid Reflow: Repaint scrolled elements due to position: fixed css attributes*/
+  backface-visibility: hidden;
 }
 
 .randomPizzaContainer {

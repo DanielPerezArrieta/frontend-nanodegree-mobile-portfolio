@@ -2,9 +2,9 @@
 
 ### Getting started
 
-In order to run the applucation succesfully follow, please, the following steps:
+In order to run the application succesfully follow, please, the following steps:
 
-1. Git clone the repository
+1. Git clone repository
 1. Run a local server inside de repository. This work uses python simple HTTP server module. 
 
   ```bash
